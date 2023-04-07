@@ -1,0 +1,14 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+/*header{
+    background-color: #E6A000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}*/
