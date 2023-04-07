@@ -8,6 +8,18 @@
     border: none;
 }
 
+#nosotros{
+    margin-top:5%;
+}
+#plant{
+
+margin-top: 5%;
+
+}
+ footer{
+    margin-top: 5%; margin-bottom: 5%;
+ }
+
 /*header{
     background-color: #E6A000;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
