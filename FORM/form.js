@@ -1,7 +1,6 @@
 const email = document.getElementById("email")
 const telefono = document.getElementById("telefono")
 const nombre = document.getElementById("nombre")
-const edad = document.getElementById("edad")
 const peso = document.getElementById("peso")
 const altura = document.getElementById ("altura")
 
@@ -30,28 +29,54 @@ e.preventDefault();
             form1.classList.toggle("d-none")
             break;
         case 'siguiente2':
-           calculoimc();
+            form2.classList.toggle("d-none")
+            form3.classList.toggle("d-none")
+            mostrar();
+            calculoIMC();
             break;
         case 'salir':
             form3.classList.toggle("d-none")
             form1.classList.toggle("d-none")
+            limpiar()
         default:
             break;
     }
 
 }
+
+function mostrar(){
+console.log(`
+email: ${email.value}
+teléfono: ${telefono.value}
+nombre: ${nombre.value}
+`)
+}
+
+function limpiar(){
+form1.reset ()
+form2.reset ()
+form3.reset ()    
+}
  
-/*
-function calculoimc() {
-(peso/altura)*100
+ 
+function calculoIMC(){
 
-si el resultado es mayor a 25 "usted tiene sobrepeso"
-si es menor a 18 "usted esta por debajo del peso ideal"
-si no "usted esta dentro de los limites normales"
 
-texto en comun con el resultado del IMC
+const peso = document.getElementById("peso").value;
+const altura = document.getElementById("altura").value;
+const imc = document.getElementById("imc");
+ 
+    const resultado = peso/(altura*altura)
+    console.log("IMC", resultado)
+        
+imc.textContent = `El IMC es una medida de detección y no para diagnosticar enfermedades o padecimientos, pero mantener un peso dentro del rango saludable es importante para la salud general a medida que envejece
 
-"Tomar buenas decisiones a la hora de comer
-ayuda a controlar el peso y reducir el riesgo de sufrir ciertas enfermedades crónicas"
+Por debajo de 18.5	Bajo peso
+18.5—24.9	Peso saludable
+25.0—29.9	Sobrepeso
+30.0 o más	Obesidad
+
+${nombre.value} tu IMC es ${resultado}`
 
 }
+

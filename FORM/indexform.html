@@ -13,15 +13,13 @@
   <link rel="stylesheet" href="./styles/form.css">
   
   
-  
- 
  <!--form en partes-->    
   <div class="container">
       <h2 class="display-2">contacto</h2>
         <section id="multistep"class="row">
         
 
-          <div class="col-12 col-lg-3">
+          <div class="col-5">
                   <!--primer paso-->
              
             <form id="form1">
@@ -46,37 +44,33 @@
                     </div>   
             </form>
              <!--segundo paso-->
-                <form id="form2">
-                  <fieldset>
-                   <div class="mb-3">    
-                    <label for="edad" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="edad">
-                   </div>
+                <form id="form2" class="d-none">
+                  <fieldset>   
                <div class="mb-3">
                     <label for="peso" class="form-label">Peso</label>
-                    <input type="number" placeholder="Ingrese su peso en kilogramos"class="form-control" id="peso">
+                    <input type="number" placeholder="Ingrese su peso en kilogramos. por ej: 60"class="form-control" id="peso">
                </div>
                 <div class="mb-3">  
                     <label class="altura" for="fullname">Altura</label>
-                    <input type="number" class="form-control" placeholder="Ingrese su altura en cm" id="altura">
+                    <input type="number" class="form-control" placeholder="Ingrese su altura en metros. por ej: 1.70" id="altura">
                 </div>
                   </fieldset>
                  <div>
                    <button type="button" id="anterior"class="btn-form btn btn-outline-dark">Anterior</button>
-                   <button type="submit" id="siguiente2" class="btn-form btn btn-outline-dark">Siguiente</button>
+                   <button type="button" id="siguiente2" class="btn-form btn btn-outline-dark">Siguiente</button>
                   </div>
               </form>
 
               <!--Resultado-->
-            <form id="form3">
+            <form id="form3" class="d-none">
              <fieldset>
                  <legend class="mb-5 text-center"> Ya tenemos tu resultado!</legend>
               <div class="mb-3">
-                 <textarea id="imc" class="form-control" cols="20" rows="10" ></textarea>
+                 <textarea id="imc" class="form-control" cols="20" rows="12" ></textarea>
               </div>
              </fieldset> 
                <div>
-               <button type="button" id="salir"class="btn-form btn btn-outline-dark">Salir</button>   
+               <button type="reset" value="limpiar" id="salir"class="btn-form btn btn-outline-dark">Salir</button>   
              </div>
             </form>
 
@@ -84,9 +78,6 @@
 
         </section>
   </div>
-
-
-
 
 
   <script src="./form.js"></script>
