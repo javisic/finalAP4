@@ -17,13 +17,27 @@ h2{
 margin-top: 5%;
 
 }
- footer{
-    margin-top: 5%; margin-bottom: 5%;
- }
 
+footer{
+   margin-top: 30px; margin-bottom: 0%;
+   padding-top: 5%; padding-bottom: 5%;
+}
 
+.items_pie a{
+    padding-right: 15px;
+}
 
-/*header{
-    background-color: #E6A000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}*/
+.copyright{
+    margin-top: 5px;
+}
+
+.llamada{
+    margin: 100px 0 20px 0;
+    padding: 70px 0 70px 0;
+    border-radius: 10px;
+}
+
+.formulario{
+    padding: 70px 0 70px 0;
+    border-radius: 10px;
+}
